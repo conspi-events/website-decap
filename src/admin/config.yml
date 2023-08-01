@@ -69,7 +69,7 @@ collections:
         default: ''
         format: 'MMM Do YY'
       - label: 'Date Fin'
-        name: 'startdate'
+        name: 'enddate'
         widget: 'date'
         default: ''
         format: 'MMM Do YY'
