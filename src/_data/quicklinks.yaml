@@ -1,14 +1,14 @@
 ---
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: Conspiracy Events
+    url: "https://www.facebook.com/Conspiracyevents"
+    desc: Follow our latest events here.
+  - title: Conspiracy Music
+    url: "https://www.facebook.com/conspiracymusicrecords"
+    desc: Find our latest release.
+  - title: Hardstyle Energy
+    url: "https://open.spotify.com/playlist/3iWHNJPCjdVZre2tzFej3C?si=f83cfae0633d4fe3"
+    desc: Listen to our weekly updated playlist on Spotify, with the latest Hardstyle Bangers.
+  - title: Hardcore Power
+    url: "https://open.spotify.com/playlist/21FjusA7YClFrxBW9mRR2e?si=3d94d0e4837f4560"
+    desc: Feel the need for more speed ? Our Hardcore playlist on Spotify has you covered !

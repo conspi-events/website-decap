@@ -1,10 +1,16 @@
 ---
 items:
-  - text: Menu One
+  - text: Accueil
     url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Events
+    url: "/events"
+  - text: Label
+    url: "/label"
+  - text: Bookings
+    url: "/bookings"
+  - text: Medias
+    url: "/medias"
+  - text: Shop
+    url: "/shop"
+  - text: Contact
+    url: "/contact"

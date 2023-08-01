@@ -12,24 +12,75 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
+  - label: "Label"
+    name: "label"
+    folder: "src/label/posts"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Artiste", name: "artiste", widget: "string" }
+      - { label: "Lien", name: "link", widget: "string", pattern: ['https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)', "Ceci n'est pas une URL correcte"] }
+      - label: "Release Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: false
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: false
+  - label: "Bookings"
+    name: "bookings"
+    folder: "src/bookings/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
+      - { label: "Instagram", name: "instagram", widget: "string" }
+      - { label: "Facebook", name: "facebook", widget: "string" }
+      - { label: "Soundcloud", name: "soundcloud", widget: "string" }
+      - { label: "Spotify", name: "spotify", widget: "string" }
+      - label: "Artist Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: false
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: false
+  - label: "Events"
+    name: "events"
+    folder: "src/events/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Facebook Event", name: "fbevent", widget: "string", pattern: ['https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)', "Ceci n'est pas une URL correcte"] }
+      - { label: "Lien Billeterie", name: "shop", widget: "string", pattern: ['https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)', "Ceci n'est pas une URL correcte"] }
+      - {label: "Location", name: "location", widget: "map" }
+      - label: 'Date début'
+        name: 'startdate'
+        widget: 'date'
+        default: ''
+        format: 'MMM Do YY'
+      - label: 'Date Fin'
+        name: 'startdate'
+        widget: 'date'
+        default: ''
+        format: 'MMM Do YY'
+      - label: "Event Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: false
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: false
   - label: "Settings"
     name: "settings"
     editor:
@@ -64,5 +115,3 @@ collections:
         file: "src/_data/settings.yaml"
         fields:
           - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
